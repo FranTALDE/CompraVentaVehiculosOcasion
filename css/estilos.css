@@ -1,0 +1,60 @@
+﻿#portada{
+	background-image: url(../img/portada.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	height: 260px;
+}
+
+.container{
+	margin-bottom: 2%;
+}
+
+.heading{
+	margin-bottom: 20px;
+	margin-left: 25px;
+	text-align: center;
+}
+
+.boton{
+	margin: 10px;
+	font-size: 25px
+}
+
+#frmGestionarEmpleados, #frmGestionarProveedores, #frmGestionarClientes, #frmGestionarVehiculos, #filaListaMatriculaVehiculo, #frmGestionarCompraVenta, #frmAltaCompra, #frmAltaVenta{
+	display: none;
+}
+
+#contenedor_mensaje{
+	margin-right: 10px;
+	display: none;
+}
+
+#spanIdEmpleado{
+	display: none;
+	color: red;
+}
+
+#spanIdProveedor, #spanNombreProveedor, #spanApellidoProveedor, #spanTelefonoProveedor, #spanNombreEmpresaProveedor{
+	display: none;
+	color: red;
+}
+
+#spanIdCliente, #spanNombreCliente, #spanApellidoCliente, #spanTelefonoCliente{
+	display: none;
+	color: red;
+}
+
+#spanMatriculaVehiculo, #spanPrecioVehiculo{
+	display: none;
+	color: red;
+}
+
+#spanIdVenta, #spanIdCompra, #spanFechaCompra, #spanFechaVenta{
+	display: none;
+	color: red;
+}
+
+/*Pagina Listados*/
+#Empleados, #Proveedores, #Clientes, #Compras, #Ventas{
+	display: none;
+}

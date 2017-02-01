@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GestionConcesionario>
+    <Empleados>
+        <empleado>
+            <idEmpleado>47898444Q</idEmpleado>
+            <tipo>Director Compras</tipo>
+        </empleado>
+        <empleado>
+            <idEmpleado>28487847A</idEmpleado>
+            <tipo>Director Compras</tipo>
+        </empleado>
+        <empleado>
+            <idEmpleado>30569479M</idEmpleado>
+            <tipo>Director Compras</tipo>
+        </empleado>
+        <empleado>
+            <idEmpleado>27846544Z</idEmpleado>
+            <tipo>Comercial Ventas</tipo>
+        </empleado>
+        <empleado>
+            <idEmpleado>29486544X</idEmpleado>
+            <tipo>Comercial Ventas</tipo>
+        </empleado>
+        <empleado>
+            <idEmpleado>24544345G</idEmpleado>
+            <tipo>Comercial Ventas</tipo>
+        </empleado>
+    </Empleados>
+    <Proveedores>
+        <proveedor>
+            <idProveedor>28898444L</idProveedor>
+            <nombre>Juan</nombre>
+            <apellido>Fernandez</apellido>
+            <movil>666789123</movil>
+            <nomEmpresa>Viuda de Terry S.L</nomEmpresa>
+        </proveedor>
+        <proveedor>
+            <idProveedor>27958424Y</idProveedor>
+            <nombre>Carlos</nombre>
+            <apellido>Peréz</apellido>
+            <movil>657989213</movil>
+            <nomEmpresa>Sevilla Wagen S.A</nomEmpresa>
+        </proveedor>
+        <proveedor>
+            <idProveedor>31484594C</idProveedor>
+            <nombre>José María</nombre>
+            <apellido>Barrero</apellido>
+            <movil>696917823</movil>
+            <nomEmpresa>Hispalauto</nomEmpresa>
+        </proveedor>
+        <proveedor>
+            <idProveedor>29845124H</idProveedor>
+            <nombre>Antonio</nombre>
+            <apellido>Giménez</apellido>
+            <movil>645789231</movil>
+            <nomEmpresa>Ferri-Móvil S.A</nomEmpresa>
+        </proveedor>
+    </Proveedores>
+    <Clientes>
+        <cliente>
+            <idCliente>47898785Q</idCliente>
+            <nombre>Andrea</nombre>
+            <apellido>Martinez</apellido>
+            <movil>654789123</movil>
+        </cliente>
+        <cliente>
+            <idCliente>32785456P</idCliente>
+            <nombre>Mateo</nombre>
+            <apellido>Villarubia</apellido>
+            <movil>656917823</movil>
+        </cliente>
+        <cliente>
+            <idCliente>26978756F</idCliente>
+            <nombre>Emilio</nombre>
+            <apellido>González</apellido>
+            <movil>649572384</movil>
+        </cliente>
+        <cliente>
+            <idCliente>27988741S</idCliente>
+            <nombre>Cristián</nombre>
+            <apellido>Gaona</apellido>
+            <movil>675478924</movil>
+        </cliente>
+    </Clientes>
+    <Categorias>
+        <categoria>
+            <idCategoria>1</idCategoria>
+            <nombre>Turismo</nombre>
+            <descripcion>Coches de gama turismo</descripcion>
+        </categoria>
+        <categoria>
+            <idCategoria>2</idCategoria>
+            <nombre>Deportivo</nombre>
+            <descripcion>Coches de gama alta</descripcion>
+        </categoria>
+        <categoria>
+            <idCategoria>3</idCategoria>
+            <nombre>4x4</nombre>
+            <descripcion>Coches de gama todocaminos</descripcion>
+        </categoria>
+    </Categorias>
+    <Extras>
+        <extra>
+            <idExtra>1</idExtra>
+            <nombre>Sensor de luces y lluvia</nombre>
+            <descripcion>Sistema de activación automática de los faros y los limpiaparabrisas</descripcion>
+        </extra>
+        <extra>
+            <idExtra>2</idExtra>
+            <nombre>Sensor de parking</nombre>
+            <descripcion>Sistema de aviso mediante sensores</descripcion>
+        </extra>
+        <extra>
+            <idExtra>3</idExtra>
+            <nombre>Techo solar</nombre>
+            <descripcion>Sistema de abertura fija u operable (que se abre como una ventana o se desliza)</descripcion>
+        </extra>
+        <extra>
+            <idExtra>4</idExtra>
+            <nombre>Tracción total</nombre>
+            <descripcion>Sistema de tracción en las cuatro ruedas, doble tracción y tracción total</descripcion>
+        </extra>
+        <extra>
+            <idExtra>5</idExtra>
+            <nombre>Automático</nombre>
+            <descripcion>Sistema de transmisión automática que puede encargarse por sí misma de cambiar la relación de cambio automáticamente a medida que el vehículo se mueve, liberando así al conductor de la tarea de cambiar de marcha manualmente</descripcion>
+        </extra>
+        <extra>
+            <idExtra>6</idExtra>
+            <nombre>Suspensiones deportivas</nombre>
+            <descripcion>Sistema de comportamiento del vehículo reduciendo el balanceo del mismo en el paso por curva, permitiendo una conducción mucho más rápida y segura</descripcion>
+        </extra>
+        <extra>
+            <idExtra>7</idExtra>
+            <nombre>Asientos deportivos</nombre>
+            <descripcion>Asientos de competición garantizan la máxima comodidad en sesiones de larga duración en las que un buen asiento y posición son vitales para evitar dolores de espalda o cervicales</descripcion>
+        </extra>
+        <extra>
+            <idExtra>8</idExtra>
+            <nombre>Llantas</nombre>
+            <descripcion>Llantas de 14" 15" 16" 17" 18" 19" 20" 21" 22"</descripcion>
+        </extra>
+    </Extras>
+    <Vehiculos>
+        <vehiculo>
+            <matricula>3198 XNY</matricula>
+            <precio>9.000€</precio>
+            <idCategoria>1</idCategoria>
+            <extras>
+                <idExtra>1</idExtra>
+            </extras>
+        </vehiculo>
+        <vehiculo>
+            <matricula>0001 ABC</matricula>
+            <precio>15.000€</precio>
+            <idCategoria>1</idCategoria>
+            <extras>
+                <idExtra>1</idExtra>
+                <idExtra>2</idExtra>
+            </extras>
+        </vehiculo>
+        <vehiculo>
+            <matricula>0401 BXC</matricula>
+            <precio>18.000€</precio>
+            <idCategoria>1</idCategoria>
+            <extras>
+                <idExtra>1</idExtra>
+                <idExtra>2</idExtra>
+                <idExtra>5</idExtra>
+                <idExtra>6</idExtra>
+            </extras>
+        </vehiculo>
+        <vehiculo>
+            <matricula>5801 CBX</matricula>
+            <precio>50.000€</precio>
+            <idCategoria>2</idCategoria>
+            <extras>
+                <idExtra>1</idExtra>
+                <idExtra>2</idExtra>
+                <idExtra>3</idExtra>
+                <idExtra>4</idExtra>
+                <idExtra>5</idExtra>
+                <idExtra>6</idExtra>
+                <idExtra>7</idExtra>
+                <idExtra>8</idExtra>
+            </extras>
+        </vehiculo>
+        <vehiculo>
+            <matricula>4523 FKP</matricula>
+            <precio>12.000€</precio>
+            <idCategoria>3</idCategoria>
+            <extras>
+                <idExtra>1</idExtra>
+                <idExtra>2</idExtra>
+                <idExtra>4</idExtra>
+                <idExtra>8</idExtra>
+            </extras>
+        </vehiculo>
+    </Vehiculos>
+    <Compras>
+        <compra>
+            <proveedor>
+                <idProveedor>29845124H</idProveedor>
+                <nombre>Antonio</nombre>
+                <apellido>Giménez</apellido>
+                <movil>645789231</movil>
+                <nomEmpresa>Ferri-Móvil S.A</nomEmpresa>
+            </proveedor>
+            <vehiculo>
+                <matricula>5801 CBX</matricula>
+                <precio>50.000€</precio>
+                <idCategoria>2</idCategoria>
+                <extras>
+                    <idExtra>1</idExtra>
+                    <idExtra>2</idExtra>
+                    <idExtra>3</idExtra>
+                    <idExtra>4</idExtra>
+                    <idExtra>5</idExtra>
+                    <idExtra>6</idExtra>
+                    <idExtra>7</idExtra>
+                    <idExtra>8</idExtra>
+                </extras>
+            </vehiculo>
+            <idCompra>11</idCompra>
+            <importe>12.000€</importe>
+            <fecha>30/01/2017</fecha>
+            <empleado>
+                <idEmpleado>30569479M</idEmpleado>
+                <tipo>Director Compras</tipo>
+            </empleado>
+        </compra>
+    </Compras>
+    <Ventas>
+        <venta>
+            <cliente>
+                <idCliente>32785456P</idCliente>
+                <nombre>Mateo</nombre>
+                <apellido>Villarubia</apellido>
+                <movil>656917823</movil>
+            </cliente>
+            <vehiculo>
+                <matricula>4523 FKP</matricula>
+                <precio>12.000€</precio>
+                <idCategoria>3</idCategoria>
+                <extras>
+                    <idExtra>1</idExtra>
+                    <idExtra>2</idExtra>
+                    <idExtra>4</idExtra>
+                    <idExtra>8</idExtra>
+                </extras>
+            </vehiculo>
+            <idVenta>22</idVenta>
+            <importe>12.000€</importe>
+            <fecha>03/02/2017</fecha>
+            <empleado>
+                <idEmpleado>29486544X</idEmpleado>
+                <tipo>Comercial Ventas</tipo>
+            </empleado>
+        </venta>
+    </Ventas>
+</GestionConcesionario>

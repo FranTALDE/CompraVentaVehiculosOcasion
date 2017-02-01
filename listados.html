@@ -1,0 +1,171 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+	<title>Listado</title>
+	<link type="text/css" rel="stylesheet" href="css/estilos.css"/>
+	<!-- Enlaces a bootstrap -->
+	<link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="./bootstrap/css/bootstrap-theme.min.css"/>
+	<script src="lib/js/jquery-3.1.1.min.js"></script>
+	<script src="./bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div id="Listados" style="margin-top: 2%;">
+		<form class="form-horizontal" name="frmListados" id="frmListados">
+			<fieldset>
+				<!-- Form Name -->
+				<legend>Listados</legend>
+
+				<!-- Multiple Radios (inline) -->
+				<div class="form-group">
+					<label class="col-xs-3 col-md-3 control-label"></label>
+					<div class="col-xs-6 col-md-6" id="radios">
+						<label class="radio-inline">
+							<input type="radio" name="radioListados" id="rbEmpleados" value="rbEmpleados">Empleados
+						</label>
+						<label class="radio-inline">
+							<input type="radio" name="radioListados" id="rbProveedores" value="rbProveedores">Proveedores
+						</label>
+						<label class="radio-inline">
+							<input type="radio" name="radioListados" id="rbClientes" value="rbClientes">Clientes
+						</label>
+						<label class="radio-inline">
+							<input type="radio" name="radioListados" id="rbVehiculos" value="rbVehiculos">Vehículos
+						</label>
+						<label class="radio-inline">
+							<input type="radio" name="radioListados" id="rbCompras" value="rbCompras">Compras
+						</label>
+						<label class="radio-inline">
+							<input type="radio" name="radioListados" id="rbVentas" value="rbVentas">Ventas
+						</label>
+					</div>
+				</div>
+			</fieldset>
+		</form>
+	</div>
+
+	<div id="Empleados"></div>
+	<div id="Proveedores"></div>
+	<div id="Clientes"></div>
+	<div id="Vehiculos"></div>
+	<div id="Compras"></div>
+	<div id="Ventas"></div>
+		
+
+	<script type="text/javascript">
+		var ventanaPadre = window.opener;
+		var radios = document.getElementById("radios");
+		radios.addEventListener("click",mostrarListado,false);
+
+		//Eventos según radio en los listados
+		function mostrarListado(oEvento){
+			var oE = oEvento || window.event;
+
+			// <> de undefined
+			if (oE.target.value){
+				var opcion = oE.target.value;
+
+				switch(opcion){
+					case 'rbEmpleados':
+						ocultarYLimpiarListados();
+						var empleados = document.getElementById("Empleados");
+						var tabla1 = ventanaPadre.oConcesionario.tablaEmpleados();
+						empleados.appendChild(tabla1);
+						mostrarListaEmpleados();
+						break;
+
+					case 'rbProveedores':
+						ocultarYLimpiarListados();
+						var proveedores = document.getElementById("Proveedores");
+						var tabla2 = ventanaPadre.oConcesionario.tablaProveedores();
+						proveedores.appendChild(tabla2);
+						mostrarListaProveedores();
+						break;
+
+					case 'rbClientes':
+						ocultarYLimpiarListados();
+						var clientes = document.getElementById("Clientes");
+						var tabla3 = ventanaPadre.oConcesionario.tablaClientes();
+						clientes.appendChild(tabla3);
+						mostrarListaClientes();
+						break;
+
+					case 'rbVehiculos':
+						ocultarYLimpiarListados();
+						var vehiculo = document.getElementById("Vehiculos");
+						var tabla4 = ventanaPadre.oConcesionario.tablaVehiculos();
+						vehiculo.appendChild(tabla4);
+						mostrarListaVehiculos();
+						break;
+
+					case 'rbCompras':
+						ocultarYLimpiarListados();
+						var compras = document.getElementById("Compras");
+						var tabla5 = ventanaPadre.oConcesionario.tablaCompras();
+						compras.appendChild(tabla5);
+						mostrarListaCompra();
+						break;
+
+					case 'rbVentas':
+						ocultarYLimpiarListados();
+						var ventas = document.getElementById("Ventas");
+						var tabla6 = ventanaPadre.oConcesionario.tablaVentas();
+						ventas.appendChild(tabla6);
+						mostrarListaVenta();
+						break;
+				}
+			}
+		}
+		function ocultarYLimpiarListados(){
+			var capaEmpleados = document.getElementById("Empleados");
+			capaEmpleados.style.display = "none";
+			capaEmpleados.getElementsByTagName("table").length>0 ? capaEmpleados.removeChild(capaEmpleados.getElementsByTagName("table")[0]) : "";
+
+			var capaProveedores = document.getElementById("Proveedores");
+			capaProveedores.style.display = "none";
+			capaProveedores.getElementsByTagName("table").length>0 ? capaProveedores.removeChild(capaProveedores.getElementsByTagName("table")[0]) : "";
+
+			var capaClientes = document.getElementById("Clientes");
+			capaClientes.style.display = "none";
+			capaClientes.getElementsByTagName("table").length>0 ? capaClientes.removeChild(capaClientes.getElementsByTagName("table")[0]) : "";
+
+			var capaVehiculos = document.getElementById("Vehiculos");
+			capaVehiculos.style.display = "none";
+			capaVehiculos.getElementsByTagName("table").length>0 ? capaVehiculos.removeChild(capaVehiculos.getElementsByTagName("table")[0]) : "";
+
+			var capaCompras = document.getElementById("Compras");
+			capaCompras.style.display = "none";
+			capaCompras.getElementsByTagName("table").length>0 ? capaCompras.removeChild(capaCompras.getElementsByTagName("table")[0]) : "";
+
+			var capaVentas = document.getElementById("Ventas");
+			capaVentas.style.display = "none";
+			capaVentas.getElementsByTagName("table").length>0 ? capaVentas.removeChild(capaVentas.getElementsByTagName("table")[0]) : "";
+		}
+
+		function mostrarListaEmpleados(){
+			document.getElementById("Empleados").style.display = "block";
+		}
+
+		function mostrarListaProveedores(){
+			document.getElementById("Proveedores").style.display = "block";
+		}
+
+		function mostrarListaClientes(){
+			document.getElementById("Clientes").style.display = "block";
+		}
+
+		function mostrarListaVehiculos(){
+			document.getElementById("Vehiculos").style.display = "block";
+		}
+
+		function mostrarListaCompra(){
+			document.getElementById("Compras").style.display = "block";
+		}
+
+		function mostrarListaVenta(){
+			document.getElementById("Ventas").style.display = "block";
+		}
+	</script>	
+</body>
+</html>
