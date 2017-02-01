@@ -178,7 +178,7 @@ function validarAltaEmpleados(){
 	if(expReg.test(idEmpleado) == false){
 		document.getElementById("spanIdEmpleado").style.display = "block";
 		document.getElementById("textIdEmpleado").style.background = "yellow";
-		fallos = true;
+		fallos=true;
 	}
 	else{
 		document.getElementById("textIdEmpleado").style.background = "none";
@@ -446,7 +446,7 @@ function validarAltaClientes(){
 		}
 		else{
 			document.getElementById("textTelefono").style.background = "none";
-			document.getElementById("spanTelefonoCliente").style.display="none";
+			document.getElementById("spanTelefonoCliente").style.display = "none";
 		}
 		//Si no hay fallos hacemos la alta del cliente
 		if(fallos==false){
@@ -490,7 +490,7 @@ function validarAltaClientes(){
 			}
 			else{
 				document.getElementById("txtNombre").style.background = "none";
-				document.getElementById("spanNombreCliente").style.display="none";
+				document.getElementById("spanNombreCliente").style.display = "none";
 			}
 			
 			if(expRegNombre.test(apellidoCliente) == false){
@@ -554,7 +554,7 @@ function validarAltaVehiculo(){
 		}
 	}
 
-	var expRegMatricula = /^\d{4}\s\w{1,3}$/;
+	var expRegMatricula = /^(\d{4}\s{1})+([A-Z]{1,3})$/;
 	var expRegPrecio = /^\d*[.]?\d{1,3}[€]$/;
 
 	var errores = false;
